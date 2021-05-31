@@ -20,6 +20,7 @@ public class ListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
+        db.deleteDB(this);
 
         // Add user objects
         for (int i=1; i < 21; ++i) {

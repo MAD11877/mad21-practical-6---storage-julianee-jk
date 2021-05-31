@@ -94,4 +94,9 @@ public class DBHandler extends SQLiteOpenHelper {
         return db.update(TABLE_USERS, values, COLUMN_ID + " = ?",
                 new String[]{String.valueOf(user.getId())});
     }
+
+    // Delete whole database for git test
+    public static void deleteDB(Context context) {
+        context.deleteDatabase(DATABASE_NAME);
+    }
 }
