@@ -13,7 +13,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         super(itemView);
         name = itemView.findViewById(R.id.name);
         description = itemView.findViewById(R.id.description);
-        image = itemView.findViewById(R.id.img);
+        image = itemView.findViewById(R.id.img_profile);
         imageBig = itemView.findViewById(R.id.img_big);
     }
 }

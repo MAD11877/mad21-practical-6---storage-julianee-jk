@@ -2,7 +2,6 @@ package sg.edu.np.mad.madpractical;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,12 +26,12 @@ public class MainActivity extends AppCompatActivity {
 
         User userTarget = ListActivity.userList.get(id);
 
-        Button followButton = findViewById(R.id.followBtn);
+        Button followButton = findViewById(R.id.btnFollow);
 
         TextView loremText = findViewById(R.id.loremText);
         loremText.setText(userTarget.description);
 
-        TextView helloText = findViewById(R.id.helloText);
+        TextView helloText = findViewById(R.id.txtName);
         helloText.setText(userTarget.name);
 
 //        if (receivingEnd.getIntExtra("randomNo", 0) > 0) {
